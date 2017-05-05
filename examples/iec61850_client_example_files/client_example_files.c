@@ -29,7 +29,13 @@ downloadHandler(void* parameter, uint8_t* buffer, uint32_t bytesRead)
 
     if (bufferPosition + bytesRead < MAX_BUFFER_SIZE) {
         memcpy(downloadBuffer + bufferPosition, buffer, bytesRead);
+<<<<<<< HEAD
 		bufferPosition = bufferPosition + bytesRead;
+=======
+
+        bufferPosition += bytesRead;
+
+>>>>>>> refs/remotes/mz-automation/master
         return true;
     }
     else
